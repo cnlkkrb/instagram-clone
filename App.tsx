@@ -53,6 +53,8 @@ const Section: React.FC<
         ]}>
         {children}
       </Text>
+      <Text>Hellloo</Text>
+      <Text>Hellloo</Text>
     </View>
   );
 };
