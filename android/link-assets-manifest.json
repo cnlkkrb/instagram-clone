@@ -1,0 +1,49 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/BeautyMountainsPersonalUse-od7z.ttf",
+      "sha1": "60517caeb8c98bf5c73ae204c68f43f531c9be43"
+    },
+    {
+      "path": "assets/fonts/CeraPro-Bold.ttf",
+      "sha1": "80fa01ae2915d40d92852b96ffad4484bc95ed3a"
+    },
+    {
+      "path": "assets/fonts/CeraPro-Medium.ttf",
+      "sha1": "a0b66a6989cc5b95b7a4a3de2fe7053171d728ef"
+    },
+    {
+      "path": "assets/fonts/CeraPro-Regular.ttf",
+      "sha1": "7e036889479352aeb1717cf34c5be48b831d6795"
+    },
+    {
+      "path": "assets/fonts/InstagramSansHeadline-Regular.ttf",
+      "sha1": "d3a5112c9e8c1bae5bc76dc373280d7f45e1c9c3"
+    },
+    {
+      "path": "assets/fonts/InstagramSansScript-Regular.ttf",
+      "sha1": "0f632764e864ad015b9599eadd7a66a6620c64e9"
+    },
+    {
+      "path": "assets/fonts/LemonJellyPersonalUse-dEqR.ttf",
+      "sha1": "6191319e7a2cdf44cbbe0be53d6dfdd6eed73f13"
+    },
+    {
+      "path": "assets/fonts/Oxygen-Bold.ttf",
+      "sha1": "821b9d11d801f06dedf9553c25ba206ddbb87069"
+    },
+    {
+      "path": "assets/fonts/Oxygen-Light.ttf",
+      "sha1": "55a24e1af6c48066de1944c7014f000517114f58"
+    },
+    {
+      "path": "assets/fonts/Roboto-Thin.ttf",
+      "sha1": "58c733e22bceeaf9609ce578eca92ac303c6d92f"
+    },
+    {
+      "path": "assets/fonts/Roboto-ThinItalic.ttf",
+      "sha1": "cc79d5a23bd0ec08b1d99f5390bf33cacc3082f4"
+    }
+  ]
+}

@@ -1,10 +1,5 @@
 import {createTheme} from '@shopify/restyle';
 
-const palette = {
-  grey: '#D1D6DB',
-  red: '#EB2359',
-};
-
 const themeSpacing = {
   none: 0,
   auto: 'auto',
@@ -19,10 +14,25 @@ const themeSpacing = {
   camera: 90,
 };
 
+const palette = {
+  black: '#060608',
+  red: '#EB2359',
+  white: '#fff',
+  slate: '#333B48',
+  grey: '#363636',
+  blue: '#0095f6',
+  lightblue: '#F0F3FF'
+};
+
 const theme = createTheme({
   colors: {
-    mainBackground: palette.grey,
+    mainBackground: palette.black,
     mainBackground2: palette.red,
+    white: palette.white,
+    slate: palette.slate,
+    grey: palette.grey,
+    blue: palette.blue,
+    lightblue: palette.lightblue
   },
   spacing: themeSpacing,
   breakpoints: {},
@@ -42,9 +52,8 @@ const theme = createTheme({
       lineHeight: 24,
     },
     heading1: {
-      fontWeight: "700",
-      fontSize: 24,
-      lineHeight: 24,
+      fontSize: 50,
+      fontFamily: 'BeautyMountainsPersonalUse-od7z'
     },
     heading2: {
       fontWeight: "700",
@@ -55,10 +64,22 @@ const theme = createTheme({
       fontWeight: "700",
       fontSize: 16,
     },
+    heading4: {
+      fontWeight: "700",
+      fontSize: 14,
+    },
+    small: {
+      fontWeight: '500',
+      fontSize: 12
+    },
+    smallBold: {
+      fontWeight: '700',
+      fontSize: 12
+    },
     normal: {},
     subTitle: {
       fontSize: 15,
-      fontWeight: "500",
+      fontWeight: "700",
       lineHeight: 25,
     },
     subTitleSmall: {
@@ -67,18 +88,17 @@ const theme = createTheme({
     },
     defaults: {
       fontSize: 14,
-      fontFamily: "Cera Pro",
     },
   },
   textWeights: {
     regular: {
-      fontFamily: "InstagramSansHeadline-Regular",
+      fontFamily: "BeautyMountainsPersonalUse-od7z",
     },
     medium: {
-      fontFamily: "InstagramSansHeadline-Regular",
+      fontFamily: "BeautyMountainsPersonalUse-od7z",
     },
     bold: {
-      fontFamily: "InstagramSansHeadline-Regular",
+      fontFamily: "BeautyMountainsPersonalUse-od7z",
     },
   },
   boxVariants: {
@@ -88,6 +108,41 @@ const theme = createTheme({
       padding: "l",
     },
     defaults: {},
+  },
+  textInputVariants: {
+    primary: {},
+    success: {},
+    error: {},
+    defaults: { width: "100%", borderRadius: 8, color: "white" },
+  },
+  buttonVariants: {
+    gradient: {},
+    primary: {
+      backgroundColor: "blue",
+    },
+    secondary: {
+      backgroundColor: "slate",
+    },
+    primaryDisabled: {
+      backgroundColor: "blue",
+      opacity: 0.3,
+    },
+    danger: {
+      backgroundColor: "red",
+    },
+    black: {
+      backgroundColor: "black",
+    },
+    outline: {
+      borderWidth: 1,
+      borderColor: "white",
+    },
+    defaults: {
+      paddingHorizontal: "l",
+      paddingVertical: "m",
+      borderRadius: 8,
+      overflow: "hidden",
+    },
   },
 });
 
