@@ -1,11 +1,16 @@
 import Box from "./Box";
 import React from "react";
 
-const Divider = () => {
+type Props = {
+  width: number;
+  backgroundColor: string;
+}
+
+const Divider = ({width, backgroundColor}: Props) => {
   return (
     <Box
-      borderBottomColor="grey"
-      borderBottomWidth={1}
+      borderBottomColor={backgroundColor}
+      borderBottomWidth={width}
     />
   );
 };

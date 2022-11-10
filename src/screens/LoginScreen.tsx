@@ -7,7 +7,7 @@ import Divider from '../components/Divider';
 import Text from '../components/Text';
 import TextInput from '../components/TextInput';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}: any) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -54,11 +54,11 @@ const LoginScreen = () => {
       </Box>
       <Box mt="l" flexDirection="row" alignItems="center">
         <Box mr="s" width={'35%'}>
-          <Divider />
+          <Divider backgroundColor='grey' width={1} />
         </Box>
         <Text variant="heading4">YA DA</Text>
         <Box ml="s" width={'35%'}>
-          <Divider />
+          <Divider backgroundColor='grey' width={1} />
         </Box>
       </Box>
       <Box mt="l" flexDirection="row" alignItems="center">
@@ -83,7 +83,7 @@ const LoginScreen = () => {
             width={'100%'}
             padding="m">
             <Text variant="small">Hesabın yok mu?</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')}>
               <Text ml="xs" color="white" variant="smallBold">
                 Kaydol.
               </Text>

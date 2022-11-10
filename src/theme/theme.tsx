@@ -12,6 +12,7 @@ const themeSpacing = {
   xxxl: 160,
   cardP: 20,
   camera: 90,
+  logo: 120
 };
 
 const palette = {
