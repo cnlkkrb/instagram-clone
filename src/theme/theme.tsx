@@ -12,7 +12,8 @@ const themeSpacing = {
   xxxl: 160,
   cardP: 20,
   camera: 90,
-  logo: 120
+  logo: 120,
+  medium: 80
 };
 
 const palette = {
@@ -22,7 +23,8 @@ const palette = {
   slate: '#333B48',
   grey: '#363636',
   blue: '#0095f6',
-  lightblue: '#F0F3FF'
+  lightblue: '#F0F3FF',
+  ligthgrey: '#878787'
 };
 
 const theme = createTheme({
@@ -33,7 +35,8 @@ const theme = createTheme({
     slate: palette.slate,
     grey: palette.grey,
     blue: palette.blue,
-    lightblue: palette.lightblue
+    lightblue: palette.lightblue,
+    ligthgrey: palette.ligthgrey
   },
   spacing: themeSpacing,
   breakpoints: {},
@@ -60,14 +63,21 @@ const theme = createTheme({
       fontWeight: "700",
       fontSize: 18,
       lineHeight: 22,
+      color: 'white'
     },
     heading3: {
       fontWeight: "700",
       fontSize: 16,
+      color: 'white'
     },
     heading4: {
       fontWeight: "700",
       fontSize: 14,
+      color: 'white'
+    },
+    heading5: {
+      fontSize: 22,
+      color: 'white'
     },
     small: {
       fontWeight: '500',
