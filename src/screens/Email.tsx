@@ -26,7 +26,7 @@ const Email = ({navigation}: any) => {
         <Button
           variant="primary"
           disabled={email === ''}
-          onPress={() => {}}
+          onPress={() => navigation.navigate('EmailVerify', {email})}
           label={'İleri'}
         />
       </Box>

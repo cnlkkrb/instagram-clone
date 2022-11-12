@@ -1,3 +1,4 @@
+import { useAtom } from 'jotai';
 import React, {useState} from 'react';
 import {TouchableOpacity} from 'react-native';
 import FacebookIcon from '../assets/img/facebook-logo';
@@ -6,11 +7,13 @@ import Button from '../components/Button';
 import Divider from '../components/Divider';
 import Text from '../components/Text';
 import TextInput from '../components/TextInput';
+import { loggedInAtom } from '../utils/atom';
 
 const LoginScreen = ({navigation}: any) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  const [, setLoggedIn] = useAtom(loggedInAtom);
+  
   return (
     <Box
       justifyContent="center"
@@ -40,7 +43,7 @@ const LoginScreen = ({navigation}: any) => {
         <Button
           variant="primary"
           disabled={username === '' || password === ''}
-          onPress={() => {}}
+          onPress={() => setLoggedIn(true)}
           label={'Giriş Yap'}
         />
       </Box>
