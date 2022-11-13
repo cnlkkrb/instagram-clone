@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import Box from '../../components/Box';
-import { post } from '../../data/post';
 import Header from './Header';
 import Posts from './Posts';
 import Stories from './Stories';
@@ -12,7 +11,7 @@ const UserHomeScreen = () => {
       <Header />
     <ScrollView>
       <Stories />
-      {post.map((post) => <Posts key={post.id} post={post}/>)}
+      <Posts/>
       </ScrollView>
     </Box>
   );

@@ -21,7 +21,7 @@ const palette = {
   red: '#EB2359',
   white: '#fff',
   slate: '#333B48',
-  grey: '#363636',
+  grey: '#262626',
   blue: '#0095f6',
   lightblue: '#F0F3FF',
   ligthgrey: '#878787'
@@ -36,7 +36,7 @@ const theme = createTheme({
     grey: palette.grey,
     blue: palette.blue,
     lightblue: palette.lightblue,
-    ligthgrey: palette.ligthgrey
+    ligthgrey: palette.ligthgrey,
   },
   spacing: themeSpacing,
   breakpoints: {},
@@ -65,6 +65,10 @@ const theme = createTheme({
       lineHeight: 22,
       color: 'white'
     },
+    heading2thin: {
+      fontSize: 22,
+      color: 'white'
+    },
     heading3: {
       fontWeight: "700",
       fontSize: 16,
@@ -83,9 +87,17 @@ const theme = createTheme({
       fontWeight: '500',
       fontSize: 12
     },
+    verySmall: {
+      fontWeight: '500',
+      fontSize: 10
+    },
     smallBold: {
       fontWeight: '700',
       fontSize: 12
+    },
+    medium: {
+      fontWeight: '500',
+      fontSize: 14
     },
     normal: {},
     subTitle: {

@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import HeartIcon from '../../assets/icon/Heart';
@@ -7,6 +8,7 @@ import Box from '../../components/Box';
 import Text from '../../components/Text';
 
 const Header = () => {
+  const navigation = useNavigation();
   return (
     <Box>
       <Box
@@ -23,11 +25,11 @@ const Header = () => {
           <TouchableOpacity style={{marginRight: 15}}>
             <PostIcon />
           </TouchableOpacity>
-          <TouchableOpacity style={{marginRight: 15}}>
+          <TouchableOpacity onPress={() => navigation.navigate('Bildirimler')} style={{marginRight: 15}}>
             <HeartIcon />
           </TouchableOpacity>
           <TouchableOpacity>
-            <MessengerIcon />
+            <MessengerIcon onPress={() => navigation.navigate('Kullanıcı Adı')}/>
           </TouchableOpacity>
         </Box>
       </Box>
