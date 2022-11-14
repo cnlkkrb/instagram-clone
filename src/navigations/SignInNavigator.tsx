@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import TabNavigation from './TabNavigator';
 import NotificationScreen from '../screens/NotificationScreen/NotificationScreen';
 import MessageScreen from '../screens/MessageScreen/MessageScreen';
+import DiscoverScreen from '../screens/SearchScreen/DiscoverScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,13 @@ const SignInNavigator = () => {
           }}
           name="Kullanıcı Adı"
           component={MessageScreen}
+        />
+        <Stack.Screen
+          options={{
+            headerShown: true,
+          }}
+          name="Keşfet"
+          component={DiscoverScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

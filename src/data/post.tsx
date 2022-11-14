@@ -17,7 +17,7 @@ export const post = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     date: '2022-11-13 00:20',
-    likes: 100,
+    likes: 120,
     commends: 24,
     image: require('../assets/img/nature.jpg'),
     user: {

@@ -9,6 +9,8 @@ import VideoFilledIcon from '../assets/icon/VideoFilled';
 import StoreIcon from '../assets/icon/store';
 import StoreFilledIcon from '../assets/icon/StoreFilled';
 import Box from '../components/Box';
+import SearchScreen from '../screens/SearchScreen/SearchScreen';
+import ReelScreen from '../screens/ReelScreen/ReelScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,8 +40,8 @@ const TabNavigator = () => {
             return <SearchIcon fill={'black'} />;
           },
         }}
-        name="UserHomeScreen2"
-        component={UserHomeScreen}
+        name="SearchScreen"
+        component={SearchScreen}
       />
       <Tab.Screen
         options={{
@@ -49,8 +51,8 @@ const TabNavigator = () => {
             return <VideoIcon fill={'black'} />;
           },
         }}
-        name="UserHomeScreen3"
-        component={UserHomeScreen}
+        name="ReelScreen"
+        component={ReelScreen}
       />
       <Tab.Screen
         options={{

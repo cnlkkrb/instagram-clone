@@ -1,26 +1,25 @@
-import React, {useState} from 'react';
-import Box from '../../components/Box';
-import {Image, TouchableOpacity} from 'react-native';
-import Text from '../../components/Text';
-import DotIcon from '../../assets/icon/dot';
-import PostImage from '../../components/PostImage';
-import CommentIcon from '../../assets/icon/Comment';
-import BookMarkIcon from '../../assets/icon/Bookmark';
-import ShareIcon from '../../assets/icon/Share';
-import ReadMore from '@fawazahmed/react-native-read-more';
+import ReadMore from '@fawazahmed/react-native-read-more'
+import React, { useState } from 'react'
+import { Image, ScrollView, TouchableOpacity } from 'react-native'
+import AntDesign from 'react-native-vector-icons/AntDesign'
+import BookMarkIcon from '../../assets/icon/Bookmark'
+import CommentIcon from '../../assets/icon/Comment'
+import DotIcon from '../../assets/icon/dot'
+import ShareIcon from '../../assets/icon/Share'
+import Box from '../../components/Box'
+import Text from '../../components/Text'
+import { post } from '../../data/post'
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import {post} from '../../data/post';
+import theme from '../../theme/theme'
 
 dayjs.extend(relativeTime);
 
-const Posts = () => {
-  const [liked, setLiked] = useState(false);
-
+const DiscoverScreen = ({route}: any) => {
+    const [liked, setLiked] = useState(false);
   return (
-    <Box mb="l">
-      {post.map((item,index) => {
+    <ScrollView style={{flex: 1, backgroundColor: theme.colors.mainBackground}}>
+        {post.map((item,index) => {
         return (
           <Box key={index}>
             <Box mx="m" mt="l" mb="m" flexDirection="row" alignItems="center">
@@ -31,11 +30,23 @@ const Posts = () => {
               <Text variant="heading4" ml="s">
                 {item.user.name}
               </Text>
-              <Box style={{marginLeft: 'auto'}}>
+              <Box flexDirection='row' alignItems='center' style={{marginLeft: 'auto'}}>
+              <TouchableOpacity
+                style={{
+                  width: 75,  
+                  height: 30,
+                  backgroundColor: theme.colors.grey,
+                  borderRadius: 8,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight: 15
+                }}>
+                <Text variant="smallBold">Takip Et</Text>
+              </TouchableOpacity>
                 <DotIcon />
               </Box>
             </Box>
-            <PostImage src={item.image} />
+            <Image resizeMode='cover' style={{width: '100%', height: 300}} source={route.params.imageData}/>
             <Box paddingHorizontal="m">
               <Box
                 flexDirection="row"
@@ -84,8 +95,9 @@ const Posts = () => {
           </Box>
         );
       })}
-    </Box>
-  );
-};
+    </ScrollView>
+  )
+}
 
-export default Posts;
+export default DiscoverScreen
+
